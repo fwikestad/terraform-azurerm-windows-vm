@@ -1,3 +1,5 @@
+For example see [example/vm.tf](example/vm.tf)
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
