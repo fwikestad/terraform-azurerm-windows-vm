@@ -30,7 +30,7 @@ resource "azurerm_network_interface" "example" {
     private_ip_address_allocation = var.private_ip_address != null ? "Static" : "Dynamic"
     private_ip_address            = var.private_ip_address
     private_ip_address_version    = "IPv4"
-    public_ip_address_id          = azurerm_public_ip.vm.id
+    public_ip_address_id          = azurerm_public_ip.vm[0].id
   }
 }
 
