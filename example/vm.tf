@@ -22,4 +22,5 @@ module "vm" {
   location            = var.resource_location
   subnet_id           = azurerm_virtual_network.subnet[Default].id
   vm_password         = "Password"
+  use_public_ip       = true
 }
