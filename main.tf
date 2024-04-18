@@ -11,6 +11,14 @@ provider "azurerm" {
   features {}
 }
 
+resource "azurerm_public_ip" "vm" {
+  count               = var.use_public_ip ? 1 : 0
+  resource_group_name = var.resource_group_name
+  name                = "pip-${var.vm_name}"
+  location            = var.location
+  allocation_method   = "Static"
+}
+
 resource "azurerm_network_interface" "example" {
   name                = "nic-${var.vm_name}"
   location            = var.location
