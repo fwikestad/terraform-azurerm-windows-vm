@@ -20,7 +20,7 @@ variable "vm_name" {
 
 variable "vm_sku" {
   type        = string
-  default     = "Standard_B2als_v5"
+  default     = "Standard_B2als_v2"
   description = "VM SKU"
 }
 
