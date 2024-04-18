@@ -21,7 +21,7 @@ resource "azurerm_network_interface" "example" {
     subnet_id                     = var.subnet_id
     private_ip_address_allocation = var.private_ip_address != null ? "Static" : "Dynamic"
     private_ip_address            = var.private_ip_address
-    private_ip_address_version    = "4"
+    private_ip_address_version    = "IPv4"
   }
 }
 
