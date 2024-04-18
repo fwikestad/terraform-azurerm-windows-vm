@@ -18,12 +18,6 @@ variable "vm_name" {
   description = "Name of the VM and it's attached resources. All names are prefixed"
 }
 
-variable "private_ip_address" {
-  type    = string
-  default = null
-  description = "(OPTIONAL) Set static IP address"
-}
-
 variable "vm_sku" {
   type    = string
   default = "B2_v5"
@@ -39,4 +33,12 @@ variable "vm_password" {
   type      = string
   sensitive = true
 }
+
+variable "private_ip_address" {
+  type    = string
+  default = null
+  description = "(OPTIONAL) Set static IP address"
+}
+
+
 
